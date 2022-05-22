@@ -7,7 +7,6 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
   .screen {
     display: flex;
     flex-wrap: wrap;
@@ -15,9 +14,8 @@ body {
     min-height: 80vh;
     background-color: rgb(195, 169, 220);
   }
-  
   .auto {
-    width: 250px;
+    width: 100%;
     height: 350px;
     background-color: gray;
     display: flex;
@@ -26,22 +24,15 @@ body {
     align-items: center;
     margin: 0px, 10px, 0px, 10px;
   }
-  
   .auto img {
-    width: 240px;
+    width: 100%;
     height: 300px;
   }
-  .auto {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .auto h2 {
-    font-size: 20px;
-  }
   .get_button,
-  .delete_button {
+  .delete_button,
+  .post_button,
+  .put_button {
     width: 100px;
     height: 20px;
-    background-color: red;
+    background-color: rgb(163, 152, 152);
   }
