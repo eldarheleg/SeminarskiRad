@@ -16,7 +16,7 @@ body {
     background-color: rgb(195, 169, 220);
   }
   
-  .container_kartica {
+  .auto {
     width: 250px;
     height: 350px;
     background-color: gray;
@@ -27,7 +27,7 @@ body {
     margin: 0px, 10px, 0px, 10px;
   }
   
-  .container_kartica img {
+  .auto img {
     width: 240px;
     height: 300px;
   }
