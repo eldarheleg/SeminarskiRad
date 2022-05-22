@@ -3,14 +3,12 @@ const delete_dugme = document.querySelector(".delete_button");
 const screen = document.querySelector(".screen");
 const post_button = document.querySelector(".post_button");
 const put_button = document.querySelector(".put_button");
-
 const getFunction = async () =>{
     const podaci = await fetch(
         "https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars"
     )
     const gotovi_podaci = await podaci.json();
     console.log(gotovi_podaci);
-
     for (let i=0; i<gotovi_podaci.length; i++){
         let htmlString = `<div class="auto">
         <img src="${gotovi_podaci[i].imageUrl}" alt="slika"> 
@@ -25,13 +23,11 @@ const getFunction = async () =>{
     }
 }
 const deleteFunction = async () => {
-    //get metoda za dobijanje id-a prvog obroka. Potrebdno u delete metodi.
     const podaci = await fetch(
     "https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars"
     );
     const gotovi_podaci = await podaci.json();
     const id = gotovi_podaci[0].id;
-    //delete fetch ocekuje parametar id kojeg dodajemo na kraj linka
     const odgovor = await fetch(
     `https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars/${id}`,
     {
@@ -40,7 +36,6 @@ const deleteFunction = async () => {
     );
     console.log(odgovor); //Odgovor delete
 };
-
 const postFunction = async () => {
     const response = await fetch(
     "https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars",
@@ -92,4 +87,4 @@ post_button.addEventListener("click", () => {
 });
 put_button.addEventListener("click", () =>{
     putFunction();
-})
+});
