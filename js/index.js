@@ -41,7 +41,7 @@ const deleteFunction = async () => {
     );
     console.log(odgovor); //Odgovor delete
   };
-  
+
   const postFunction = async () => {
     const response = await fetch(
       "https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars",
@@ -60,7 +60,7 @@ const deleteFunction = async () => {
         }),
       }
     );
-    //opcionalno za bolji ispis poruke od servera
+    
     console.log(response);
   };
 
