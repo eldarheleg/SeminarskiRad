@@ -1,23 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url('https://images.saymedia-content.com/.image/t_share/MTc4NzM1OTc4MzE0MzQzOTM1/how-to-create-cool-website-backgrounds-the-ultimate-guide.png');
+    background-size: cover;
   }
-  .screen {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 80vh;
-    background-color: rgb(195, 169, 220);
-  }
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+
+.left img {
+    width: 136px;
+    
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.mid {
+    display: inline-block;
+    width: 40%;
+    margin: 50px auto;
+    /* border: 2px solid green; */
+}
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+
+.navbar {
+  display: flex;
+  
+}
+.navbar li {
+  display: inline-block;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.navbar li a {
+  color: white;
+  padding: 34px 23px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+  color: grey;
+
+}
+
   .auto {
     width: 100%;
     height: 350px;
-    background-color: gray;
+    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,14 +77,11 @@ body {
     margin: 0px, 10px, 0px, 10px;
   }
   .auto img {
-    width: 100%;
+    width: 90%;
     height: 300px;
   }
-  .get_button,
-  .delete_button,
-  .post_button,
-  .put_button {
-    width: 100px;
-    height: 20px;
-    background-color: rgb(163, 152, 152);
+  
+.buttons {
+    display: inline-block;
+    
   }
