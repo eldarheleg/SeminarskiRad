@@ -8,7 +8,7 @@ const getFunction = async () =>{
         "https://ptf-web-dizajn-2022.azurewebsites.net/api/Cars"
     )
     const gotovi_podaci = await podaci.json();
-    console.log(gotovi_podaci);
+    //console.log(gotovi_podaci);
     for (let i=0; i<gotovi_podaci.length; i++){
         let htmlString = `<div class="auto">
         <img src="${gotovi_podaci[i].imageUrl}" alt="slika"> 
